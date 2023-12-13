@@ -45,7 +45,7 @@ function Sidebar() {
 
 
     return (
-        <div className='left-0 h-full w-[85px] border-r-[1px] border-r-neutral-300 flex flex-col'>
+        <div className='left-0 h-full w-[85px] border-r-[1px] border-r-neutral-300 md:flex flex-col hidden'>
             <div className="flex items-center justify-center bg-[#000000] py-7 mb-10">
                 <h1 className={`font-bold text-white text-4xl ${red_hat_display.className}`}>
                     JK
