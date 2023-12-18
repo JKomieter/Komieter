@@ -1,14 +1,23 @@
 "use client"
-import React from 'react'
+import React, { use, useEffect, useState } from 'react'
 import { Red_Hat_Display } from 'next/font/google'
 import { TypeAnimation } from 'react-type-animation'
+import { useInView } from 'react-intersection-observer'
 
 
 const red_hat_display = Red_Hat_Display({ subsets: ['latin'], weight: ['300', '500', '700'] })
 
 function HeroDescription() {
+  const { ref, inView, entry } = useInView();
+  const [hasAnimated, setHasAnimated] = useState(false);
+
+  useEffect(() => {
+    if (!inView || hasAnimated) return;
+    setHasAnimated(true);
+  }, [inView, hasAnimated]);
+
   return (
-    <div className='flex flex-col gap-5 container'>
+    <div className={`${hasAnimated ? 'opacity-100' : 'opacity-0 translate-y-24'} duration-1000 flex flex-col gap-5 container`} ref={ref}>
         <h4 className={`${red_hat_display.className}`}>
             Hello, My name is
         </h4>
@@ -22,7 +31,7 @@ function HeroDescription() {
             1000,
             "Backend Developer",
             1000,
-            "AI Developer",
+            "CLI Developer",
             1000,
             "Mobile Developer",
             1000,
