@@ -10,7 +10,7 @@ export const canDo = [
     {
         svg: <WEB className='w-[300px] h-[300px] lg:block hidden -translate-y-28' />,
         title: "Web Development",
-        description: "Experienced web developer with a focus on crafting engaging applications. Proficient in frontend tech like HTML, CSS, and React.js, and skilled in backend with Node.js and Express. Full-stack capabilities, emphasizing responsive design. Git expert with a solutions-oriented mindset, committed to continuous learning.",
+        description: "Experienced web developer with a focus on crafting engaging applications. Proficient in frontend tech like TypeScript, HTML, CSS, and React.js, and skilled in backend with Node.js and Express. Full-stack capabilities, emphasizing responsive design. Git expert with a solutions-oriented mindset, committed to continuous learning.",
         translationStyle: "flex-row-reverse justify-start"
     },
     {

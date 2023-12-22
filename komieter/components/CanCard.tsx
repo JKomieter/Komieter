@@ -16,9 +16,11 @@ function CanCard({
 
 }) {
   return (
-    <div className={`flex items-center w-full ${translationStyle}`}>
+    <div
+    className={`flex items-center w-full ${translationStyle}`}>
       {SVG}
-      <div className={`${red_hat_display.className} flex flex-col gap-3 max-w-[500px]`}>
+      <div 
+      className={`${red_hat_display.className} duration-1000 flex flex-col gap-3 max-w-[500px] `}>
         <h1 className="text-3xl font-semibold">{title}</h1>
         <p className="text-neutral-700">{description}</p>
       </div>

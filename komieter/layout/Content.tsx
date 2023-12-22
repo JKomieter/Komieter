@@ -2,6 +2,7 @@ import React from 'react'
 import Hero from './Hero'
 import AboutMe from './AboutMe';
 import WhatIDo from "@/layout/WhatIDo";
+import Experience from './Experience';
 
 
 function Content() {
@@ -10,6 +11,7 @@ function Content() {
         <Hero />
         <AboutMe />
         <WhatIDo />
+        <Experience />
     </main>
   )
 }
