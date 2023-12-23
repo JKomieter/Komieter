@@ -23,7 +23,7 @@ function ExperienceCard({
     timeline: string
 }) {
   return (
-    <div className='md:w-[70%] w-full min-h-[180px] bg-white border-2 border-neutral-800 rounded-sm flex md:flex-row flex-col gap-4 p-3 items-start overflow-hidden'>
+    <div className='md:w-[80%] w-full min-h-[200px] bg-white border-2 border-neutral-800 rounded-sm flex md:flex-row flex-col gap-4 p-3 items-start overflow-hidden'>
         <div className="h-full flex flex-col gap-2 min-w-[200px]">
             <h3 className={`${red_hat_display.className} text-xl font-semibold text-neutral-800 mb-2`}>{role}</h3>
             <p className={`${red_hat_display.className} font-light italic`}>{location} | {jobType}</p>

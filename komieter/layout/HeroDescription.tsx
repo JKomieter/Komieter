@@ -8,16 +8,12 @@ import { useInView } from 'react-intersection-observer'
 const red_hat_display = Red_Hat_Display({ subsets: ['latin'], weight: ['300', '500', '700'] })
 
 function HeroDescription() {
-  const { ref, inView, entry } = useInView();
-  const [hasAnimated, setHasAnimated] = useState(false);
-
-  useEffect(() => {
-    if (!inView || hasAnimated) return;
-    setHasAnimated(true);
-  }, [inView, hasAnimated]);
+  const { ref, inView, entry } = useInView({
+    triggerOnce: true,
+  });
 
   return (
-    <div className={`${hasAnimated ? 'opacity-100' : 'opacity-0 translate-y-24'} duration-1000 flex flex-col gap-5 container`} ref={ref}>
+    <div className={`${inView ? 'opacity-100' : 'opacity-0 translate-y-24'} duration-1000 flex flex-col gap-5 container`} ref={ref}>
         <h4 className={`${red_hat_display.className}`}>
             Hello, My name is
         </h4>
@@ -27,13 +23,13 @@ function HeroDescription() {
         <h3>
         <TypeAnimation
           sequence={[
-            "Frontend Developer",
+            "Frontend Engineer",
             1000,
-            "Backend Developer",
+            "Backend Engineer",
             1000,
-            "CLI Developer",
+            "CLI Engineer",
             1000,
-            "Mobile Developer",
+            "Mobile Engineer",
             1000,
           ]}
           speed={50}
