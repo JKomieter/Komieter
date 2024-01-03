@@ -23,14 +23,14 @@ function ExperienceCard({
     timeline: string
 }) {
   return (
-    <div className='md:w-[70%] w-full min-h-[180px] bg-white border-2 border-neutral-800 rounded-sm flex md:flex-row flex-col gap-4 p-3 items-start overflow-hidden'>
+    <div className='md:w-[80%] w-full min-h-[200px] bg-white border-2 border-neutral-800 rounded-sm flex md:flex-row flex-col gap-4 p-3 items-start overflow-hidden'>
         <div className="h-full flex flex-col gap-2 min-w-[200px]">
             <h3 className={`${red_hat_display.className} text-xl font-semibold text-neutral-800 mb-2`}>{role}</h3>
             <p className={`${red_hat_display.className} font-light italic`}>{location} | {jobType}</p>
             <p className={`${red_hat_display.className} font-light `}>{duration}</p>
-            <p className={`${red_hat_display.className} bg-black text-white font-semibold rounded-sm cursor-pointer w-[120px] py-2 text-center`}>
+            {/* <p className={`${red_hat_display.className} text-black font-semibold w-[120px] py-2 text-center`}>
                 {timeline}
-            </p>
+            </p> */}
         </div>
         <Divider orientation="vertical" flexItem className='w-2 text-neutral-800' />
           <div className="h-full flex flex-col gap-2">

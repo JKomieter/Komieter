@@ -2,6 +2,10 @@ import { AWS, Django, Docker, Firebase, JavaScript, Python, React, Rust, SQL } f
 
 export const skills = [
     {
+        name: "Rust",
+        icon: Rust,
+    },
+    {
         name: "Python",
         icon: Python,
     },
@@ -10,16 +14,12 @@ export const skills = [
         icon: JavaScript,
     },
     {
-        name: "React",
-        icon: React,
-    },
-    {
-        name: "Rust",
-        icon: Rust,
-    },
-    {
         name: "SQL",
         icon: SQL
+    },
+    {
+        name: "React",
+        icon: React,
     },
     {
         name: "Docker",
