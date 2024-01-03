@@ -3,6 +3,7 @@ import Hero from './Hero'
 import AboutMe from './AboutMe';
 import WhatIDo from "@/layout/WhatIDo";
 import Experience from './Experience';
+import Projects from './Projects';
 
 
 function Content() {
@@ -12,6 +13,7 @@ function Content() {
         <AboutMe />
         <WhatIDo />
         <Experience />
+        <Projects />
     </main>
   )
 }

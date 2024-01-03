@@ -27,7 +27,7 @@ function HeroDescription() {
             1000,
             "Backend Engineer",
             1000,
-            "CLI Engineer",
+            "Systems Programmer",
             1000,
             "Mobile Engineer",
             1000,
@@ -39,7 +39,7 @@ function HeroDescription() {
         />
         </h3>
         <p className={`${red_hat_display.className} text-base text-neutral-500 min-w-[300px]`}>
-            I'm a Full Stack Developer who is currently studying Machine Learning and Artificial Intelligence with Rust. 
+            I'm a Software Engineer who dives into Systems Programming, building reliable and efficient systems with Rust that serve as the backbone for various applications. Currently, I'm expanding my expertise by studying Machine Learning and Artificial Intelligence.
         </p>
     </div>
   )

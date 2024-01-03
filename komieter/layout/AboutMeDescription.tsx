@@ -1,7 +1,7 @@
 "use client"
 import React from 'react'
 import { Red_Hat_Display } from 'next/font/google'
-import { skills } from './skills'
+import { skills } from '../components/skills'
 import { useInView } from 'react-intersection-observer'
 
 const red_hat_display = Red_Hat_Display({ subsets: ['latin'], weight: ['300', '500', '700'] })
@@ -38,7 +38,7 @@ function AboutMeDescription() {
                     Hi, I'm <b>Joel Adjetey Komieter</b>
                 </h2>
                 <p className={`${red_hat_display.className} text-neutral-600`}>
-                    I'm a software engineer based in United States. I enjoy building things that live on the internet, whether that be websites, applications, or anything in between. My goal is to always build products that provide pixel-perfect, performant experiences.
+                    I'm a Software Engineer based in the United States. I have a passion for building systems that power applications and provide tools for developers. My goal is to always build reliable, efficient, and performant systems that enhance productivity and provide pixel-perfect experiences.
                 </p>
             </div>
             <div
@@ -48,7 +48,7 @@ function AboutMeDescription() {
                     <b>What are my skills?</b>
                 </h2>
                 <p className={`${red_hat_display.className} text-neutral-600`}>
-                    Elevating projects with a versatile skill set, blending creativity, coding prowess, and a keen eye for detail.
+                    I bring a versatile skill set to projects, with a focus on Systems Programming. I blend creativity, coding prowess, and a keen eye for detail to build robust and efficient systems.
                 </p>
             </div>
             <div 

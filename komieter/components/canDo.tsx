@@ -3,8 +3,8 @@ import { CLI, Mobile, WEB } from "@/svgs";
 export const canDo = [
     {
         svg: <CLI className='w-[300px] h-[300px] lg:block hidden -translate-y-28' />,
-        title: "Command Line Interface Development",
-        description: "Currently expanding my expertise into command-line app development using Rust. Actively engaged in hands-on projects to enhance proficiency in creating efficient and user-friendly command-line tools. Excited about the journey of mastering Rust for building powerful and versatile applications.",
+        title: "Systems Programming",
+        description: "Venturing into the realm of systems programming with a focus on developing efficient command-line applications using Rust. Actively involved in practical projects to deepen my understanding and skills in creating user-centric and performance-optimized command-line utilities. Eager to further explore and harness the power of Rust in building robust and versatile system applications.",
         translationStyle: "flex-row"
     },
     {
