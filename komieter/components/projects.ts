@@ -15,5 +15,13 @@ export const projects = [
         projectLink: "",
         githubLink: "https://github.com/JKomieter/InspiroDraw",
         technologies: ["Nextjs", "Socket.io", "Fabric.js"]
+    },
+    {
+        name: "Filer",
+        description: "Filer is a CLI tool that allows users to create versions of their files and easily switch between them. It is designed to be a simple and easy to use tool that can be used to manage files.",
+        image: "/images/Filer.png",
+        projectLink: "",
+        githubLink: "https://github.com/JKomieter/Filer/tree/master",
+        technologies: ["Rust"]
     }
 ];

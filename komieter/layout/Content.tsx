@@ -4,6 +4,7 @@ import AboutMe from './AboutMe';
 import WhatIDo from "@/layout/WhatIDo";
 import Experience from './Experience';
 import Projects from './Projects';
+import Achievements from './Achievements';
 
 
 function Content() {
@@ -14,6 +15,7 @@ function Content() {
         <WhatIDo />
         <Experience />
         <Projects />
+        <Achievements />
     </main>
   )
 }

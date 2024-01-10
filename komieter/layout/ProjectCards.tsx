@@ -1,17 +1,25 @@
+"use client"
 import React from 'react'
 import { projects } from '@/components/projects'
 import { Red_Hat_Display } from 'next/font/google'
 import OpenInNewIcon from '@mui/icons-material/OpenInNew';
 import GitHubIcon from '@mui/icons-material/GitHub';
+import { useRouter } from 'next/navigation';
+import { useInView } from 'react-intersection-observer';
 
 const red_hat_display = Red_Hat_Display({ subsets: ['latin'], weight: ['300', '500', '700'] })
 
 export default function ProjectCards() {
+  const router = useRouter();
+  const { ref, inView } = useInView({
+    triggerOnce: true,
+  });
+
   return (
-    <div className='w-full flex flex-wrap items-center md:gap-2 lg:gap-7 gap-5'>
+    <div className={`w-full md:w-[80%]  flex flex-col items-center md:gap-2 lg:gap-7 gap-5`}>
       {
         projects.map((p) => (
-          <div key={p.description} className="min-h-[300px] md:w-[400px] sm:w-[360px] w-full border-neutral-800 rounded-sm p-3 overflow-hidden border-2 flex flex-col gap-4 ">
+          <div ref={ref} key={p.description} className={`w-full border-neutral-800 rounded-sm p-3 overflow-hidden border-2 flex flex-col gap-4 duration-1000 ${inView ? 'opacity-100' : 'translate-y-24 opacity-0'}`}>
             <h3 className={`${red_hat_display.className} text-xl font-semibold text-neutral-800 mb-2`}>{p.name}</h3>
             <p className={`${red_hat_display.className} font-light italic text-base`}>
               {p.description}
@@ -26,9 +34,9 @@ export default function ProjectCards() {
                   ))
                 }
               </div>
-              <div className="flex flex-row gap-3">
-                <OpenInNewIcon className='text-neutral-800 cursor-pointer' />
-                <GitHubIcon className='text-neutral-800 cursor-pointer' />
+              <div className="flex flex-row gap-3 items-center">
+                <OpenInNewIcon onClick={() => router.push(p.projectLink)} className='text-neutral-800 cursor-pointer' />
+                <GitHubIcon onClick={() => router.push(p.githubLink)} className='text-neutral-800 cursor-pointer' />
               </div>
             </div>
           </div>
