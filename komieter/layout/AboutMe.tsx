@@ -4,13 +4,11 @@ import AboutMeImage from './AboutMeImage'
 
 function AboutMe() {
     return (
-<<<<<<< Updated upstream
         <div className='min-h-screen bg-[#F4F4F6] flex md:flex-row-reverse flex-col items-center p-7'>
-=======
-        <div id='about-me' className='min-h-screen bg-neutral-100 flex md:flex-row-reverse flex-col items-center p-7'>
->>>>>>> Stashed changes
-            <AboutMeDescription />
-            <AboutMeImage />
+            <div id='about-me' className='min-h-screen bg-neutral-100 flex md:flex-row-reverse flex-col items-center p-7'>
+                <AboutMeDescription />
+                <AboutMeImage />
+            </div>
         </div>
     )
 }

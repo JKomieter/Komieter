@@ -16,19 +16,11 @@ export default function ProjectCards() {
   });
 
   return (
-<<<<<<< Updated upstream
-    <div className={`w-full md:w-[80%]  flex flex-col items-center md:gap-2 lg:gap-7 gap-5`}>
-      {
-        projects.map((p) => (
-          <div ref={ref} key={p.description} className={`w-full border-neutral-800 rounded-sm p-3 overflow-hidden border-2 flex flex-col gap-4 duration-1000 ${inView ? 'opacity-100' : 'translate-y-24 opacity-0'}`}>
-            <h3 className={`${red_hat_display.className} text-xl font-semibold text-neutral-800 mb-2`}>{p.name}</h3>
-=======
     <div className={`w-full md:w-[80%] flex flex-col items-center md:gap-2 lg:gap-7 gap-5`}>
       {
         projects.map((p) => (
           <div ref={ref} key={p.description} className={`w-full border-neutral-800 rounded-sm p-3 overflow-hidden border-2 flex flex-col gap-4 duration-1000 ${inView ? 'opacity-100' : 'translate-y-24 opacity-0'}`}>
             <h3 className={`${red_hat_display.className} text-xl font-semibold text-blue-900 mb-2`}>{p.name}</h3>
->>>>>>> Stashed changes
             <p className={`${red_hat_display.className} font-light italic text-base`}>
               {p.description}
             </p>

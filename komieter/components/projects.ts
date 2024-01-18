@@ -9,8 +9,7 @@ export const projects = [
         technologies: ["Next.js", "Firebase", "Typescript"]
     },
     {
-<<<<<<< Updated upstream
-=======
+
         name: "Yggdrasil",
         description: "Yggdrasil is an application that helps one learn Data Structures and Algorithms by animating the algorithm in 3D space. It is built using Rust and the Bevy game engine. The application is currently in development.",
         image: "/images/Yggdrasil.png",
@@ -19,7 +18,6 @@ export const projects = [
         technologies: ["Rust", "Bevy"]
     },
     {
->>>>>>> Stashed changes
         name: "Inspirodraw",
         description: "Inspirodraw is a web platform that allows users to collborate and create art together. Users can create their own rooms and invite their friends to join them. Once in a room, users can draw on a canvas together and chat with each other.",
         image: "/images/Inspirodraw.png",
@@ -27,15 +25,4 @@ export const projects = [
         githubLink: "https://github.com/JKomieter/InspiroDraw",
         technologies: ["Nextjs", "Socket.io", "Fabric.js"]
     },
-<<<<<<< Updated upstream
-    {
-        name: "Filer",
-        description: "Filer is a CLI tool that allows users to create versions of their files and easily switch between them. It is designed to be a simple and easy to use tool that can be used to manage files.",
-        image: "/images/Filer.png",
-        projectLink: "",
-        githubLink: "https://github.com/JKomieter/Filer/tree/master",
-        technologies: ["Rust"]
-    }
-=======
->>>>>>> Stashed changes
 ];

@@ -12,7 +12,7 @@ import LightbulbIcon from '@mui/icons-material/Lightbulb';
 import MilitaryTechIcon from '@mui/icons-material/MilitaryTech';
 
 
-const red_hat_display = Red_Hat_Display({ subsets: ['latin'], weight: ['900']  })
+const red_hat_display = Red_Hat_Display({ subsets: ['latin'], weight: ['900'] })
 
 function Sidebar() {
     const router = useRouter()
@@ -56,23 +56,20 @@ function Sidebar() {
 
     return (
         <div className='left-0 h-full w-[85px] border-r-[1px] border-r-neutral-300 md:flex flex-col hidden'>
-            <div className="flex items-center justify-center bg-[#000000] py-7 mb-10">
-
-            <div className="flex items-center justify-center bg-blue-900 py-7 mb-10">
-                <h1 className={`font-bold text-white text-4xl ${red_hat_display.className}`}>
-                    JK
-                </h1>
-            </div>
-            {
-                items.map((item) => (
-                    <a 
-                    href={`#${item.name.toLowerCase()}`}
-                    key={item.name} className="flex justify-center items-center py-5 border-b-[1px] border-b-neutral-300 cursor-pointer">
-                        {item.icon}
-                    </a>
-                ))
-            }
-            </div>
+                <div className="flex items-center justify-center bg-blue-900 py-7 mb-10">
+                    <h1 className={`font-bold text-white text-4xl ${red_hat_display.className}`}>
+                        JK
+                    </h1>
+                </div>
+                {
+                    items.map((item) => (
+                        <a
+                            href={`#${item.name.toLowerCase()}`}
+                            key={item.name} className="flex justify-center items-center py-5 border-b-[1px] border-b-neutral-300 cursor-pointer">
+                            {item.icon}
+                        </a>
+                    ))
+                }
         </div>
     )
 }

@@ -8,12 +8,9 @@ const nextConfig = {
         })
 
         return config
-<<<<<<< Updated upstream
-=======
     },
     images: {
         domains: ["images.pexels.com"],
->>>>>>> Stashed changes
     }
 }
 

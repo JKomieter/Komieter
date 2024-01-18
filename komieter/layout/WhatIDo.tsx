@@ -16,19 +16,11 @@ function WhatIDo() {
     })
 
     return (
-<<<<<<< Updated upstream
-        <div className='min-h-screen bg-[#fff] flex flex-col p-7 justify-center items-center gap-10'>
-            <h1
-                ref={headerRef}
-                style={{ fontSize: '3em' }}
-                className={`${red_hat_display.className} duration-1000 font-bold text-6xl text-neutral-800 w-full text-center ${headerRefIsInView ? 'opacity-100' : 'translate-y-24 opacity-0'}}`}
-=======
         <div id='what-i-do' className='min-h-screen flex flex-col p-7 justify-center items-center gap-10'>
             <h1
                 ref={headerRef}
                 style={{ fontSize: '3em' }}
                 className={`${red_hat_display.className} duration-1000 font-bold text-6xl text-blue-500 w-full text-center ${headerRefIsInView ? 'opacity-100' : 'translate-y-24 opacity-0'}}`}
->>>>>>> Stashed changes
             >
                 What I Do
             </h1>

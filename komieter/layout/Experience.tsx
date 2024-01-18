@@ -16,19 +16,11 @@ function Experience() {
     });
 
     return (
-<<<<<<< Updated upstream
-        <div className='min-h-screen bg-[#F4F4F6] flex flex-col p-7 gap-20'>
-            <h1
-                ref={headerRef}
-                style={{ fontSize: '3em' }}
-                className={`${red_hat_display.className} duration-1000 font-bold text-6xl text-neutral-800 w-full text-left ${headerRefIsInView ? 'opacity-100' : 'translate-y-24 opacity-0'}}`}
-=======
         <div id='experience' className='min-h-screen bg-neutral-100 flex flex-col p-7 gap-20'>
             <h1
                 ref={headerRef}
                 style={{ fontSize: '3em' }}
                 className={`${red_hat_display.className} duration-1000 font-bold text-6xl text-blue-500 w-full text-left ${headerRefIsInView ? 'opacity-100' : 'translate-y-24 opacity-0'}}`}
->>>>>>> Stashed changes
             >
                 Experience
             </h1>

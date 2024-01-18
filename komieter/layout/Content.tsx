@@ -5,10 +5,8 @@ import WhatIDo from "@/layout/WhatIDo";
 import Experience from './Experience';
 import Projects from './Projects';
 import Achievements from './Achievements';
-<<<<<<< Updated upstream
-=======
 import Contact from './Contact';
->>>>>>> Stashed changes
+
 
 
 function Content() {
@@ -20,10 +18,7 @@ function Content() {
         <Experience />
         <Projects />
         <Achievements />
-<<<<<<< Updated upstream
-=======
         <Contact />
->>>>>>> Stashed changes
     </main>
   )
 }
