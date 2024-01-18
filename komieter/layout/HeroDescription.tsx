@@ -17,7 +17,11 @@ function HeroDescription() {
         <h4 className={`${red_hat_display.className}`}>
             Hello, My name is
         </h4>
+<<<<<<< Updated upstream
         <h1 className={`${red_hat_display.className} font-bold text-7xl text-neutral-800`}>
+=======
+        <h1 className={`${red_hat_display.className} font-bold text-7xl text-blue-500`}>
+>>>>>>> Stashed changes
             Joel Komieter
         </h1>
         <h3>
@@ -35,10 +39,17 @@ function HeroDescription() {
           speed={50}
           repeat={Infinity}
           style={{ fontSize: '2em' }}
+<<<<<<< Updated upstream
           className={`${red_hat_display.className} font-bold text-4xl text-neutral-800`}
         />
         </h3>
         <p className={`${red_hat_display.className} text-base text-neutral-500 min-w-[300px]`}>
+=======
+          className={`${red_hat_display.className} font-bold text-4xl text-blue-900`}
+        />
+        </h3>
+        <p className={`${red_hat_display.className} text-base text-neutral-700 min-w-[300px]`}>
+>>>>>>> Stashed changes
             I'm a Software Engineer who dives into Systems Programming, building reliable and efficient systems with Rust that serve as the backbone for various applications. Currently, I'm expanding my expertise by studying Machine Learning and Artificial Intelligence.
         </p>
     </div>

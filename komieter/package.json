@@ -16,6 +16,10 @@
     "next": "14.0.3",
     "react": "^18",
     "react-dom": "^18",
+<<<<<<< Updated upstream
+=======
+    "react-icons": "^5.0.1",
+>>>>>>> Stashed changes
     "react-intersection-observer": "^9.5.3",
     "react-type-animation": "^3.2.0"
   },

@@ -25,7 +25,11 @@ function AboutMeDescription() {
             <h1
                 ref={headerRef}
                 style={{ fontSize: '3em' }}
+<<<<<<< Updated upstream
                 className={`${red_hat_display.className} font-bold text-6xl text-neutral-800 
+=======
+                className={`${red_hat_display.className} font-bold text-6xl text-blue-500 
+>>>>>>> Stashed changes
                 ${headerRefIsInView ? 'opacity-100' : 'translate-y-24 opacity-0'} duration-1000
                 `}
             >
@@ -35,7 +39,11 @@ function AboutMeDescription() {
             ref={nameRef}
             className={`flex flex-col gap-4 ${nameRefIsInView ? "opacity-100" : "opacity-0 translate-y-24"} duration-1000`}>
                 <h2 className={`${red_hat_display.className} text-2xl`}>
+<<<<<<< Updated upstream
                     Hi, I'm <b>Joel Adjetey Komieter</b>
+=======
+                    Hi, I'm <b className='text-blue-900'>Joel Adjetey Komieter</b>
+>>>>>>> Stashed changes
                 </h2>
                 <p className={`${red_hat_display.className} text-neutral-600`}>
                     I'm a Software Engineer based in the United States. I have a passion for building systems that power applications and provide tools for developers. My goal is to always build reliable, efficient, and performant systems that enhance productivity and provide pixel-perfect experiences.
@@ -44,7 +52,11 @@ function AboutMeDescription() {
             <div
             ref={skillsRef}
             className={`flex flex-col gap-4 ${skillsRefIsInView ? "opacity-100" : "opacity-0 translate-y-24"} duration-1000`}>
+<<<<<<< Updated upstream
                 <h2 className={`${red_hat_display.className} text-2xl`}>
+=======
+                <h2 className={`${red_hat_display.className} text-2xl text-blue-900`}>
+>>>>>>> Stashed changes
                     <b>What are my skills?</b>
                 </h2>
                 <p className={`${red_hat_display.className} text-neutral-600`}>

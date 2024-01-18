@@ -14,11 +14,19 @@ function Projects() {
 
 
   return (
+<<<<<<< Updated upstream
     <div className='min-h-screen bg-[#fff] flex flex-col p-7 gap-20'>
       <h1
         ref={headerRef}
         style={{ fontSize: '3em' }}
         className={`${red_hat_display.className} duration-1000 font-bold text-6xl text-neutral-800 w-full text-left ${headerRefIsInView ? 'opacity-100' : 'translate-y-24 opacity-0'}}`}
+=======
+    <div id="projects" className='min-h-screen flex flex-col p-7 gap-20'>
+      <h1
+        ref={headerRef}
+        style={{ fontSize: '3em' }}
+        className={`${red_hat_display.className} duration-1000 font-bold text-6xl text-blue-500 w-full text-left ${headerRefIsInView ? 'opacity-100' : 'translate-y-24 opacity-0'}}`}
+>>>>>>> Stashed changes
       >
         Projects
       </h1>

@@ -8,6 +8,11 @@ import SafetyCheckIcon from '@mui/icons-material/SafetyCheck'
 import BorderColorIcon from '@mui/icons-material/BorderColor'
 import CallIcon from '@mui/icons-material/Call'
 import { useRouter } from 'next/navigation'
+<<<<<<< Updated upstream
+=======
+import LightbulbIcon from '@mui/icons-material/Lightbulb';
+import MilitaryTechIcon from '@mui/icons-material/MilitaryTech';
+>>>>>>> Stashed changes
 
 
 const red_hat_display = Red_Hat_Display({ subsets: ['latin'], weight: ['900']  })
@@ -21,11 +26,19 @@ function Sidebar() {
             icon: <HomeIcon fontSize='large' className='text-[#66666E]' />
         },
         {
+<<<<<<< Updated upstream
             name: 'Expertise',
             icon: <PersonIcon fontSize='large' className='text-[#E6E6E9]' />
         },
         {
             name: 'Work',
+=======
+            name: 'About-me',
+            icon: <PersonIcon fontSize='large' className='text-[#E6E6E9]' />
+        },
+        {
+            name: 'What-I-do',
+>>>>>>> Stashed changes
             icon: <HomeRepairServiceIcon fontSize='large' className='text-[#E6E6E9]' />
         },
         {
@@ -33,8 +46,17 @@ function Sidebar() {
             icon: <SafetyCheckIcon fontSize='large' className='text-[#E6E6E9]' />
         },
         {
+<<<<<<< Updated upstream
             name: 'Testimonials',
             icon: <BorderColorIcon fontSize='large' className='text-[#E6E6E9]' />
+=======
+            name: 'Projects',
+            icon: <LightbulbIcon fontSize='large' className='text-[#E6E6E9]' />
+        },
+        {
+            name: 'Achievements',
+            icon: <MilitaryTechIcon fontSize='large' className='text-[#E6E6E9]' />
+>>>>>>> Stashed changes
         },
         {
             name: 'Contact',
@@ -46,7 +68,11 @@ function Sidebar() {
 
     return (
         <div className='left-0 h-full w-[85px] border-r-[1px] border-r-neutral-300 md:flex flex-col hidden'>
+<<<<<<< Updated upstream
             <div className="flex items-center justify-center bg-[#000000] py-7 mb-10">
+=======
+            <div className="flex items-center justify-center bg-blue-900 py-7 mb-10">
+>>>>>>> Stashed changes
                 <h1 className={`font-bold text-white text-4xl ${red_hat_display.className}`}>
                     JK
                 </h1>
